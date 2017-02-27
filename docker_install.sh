@@ -10,3 +10,4 @@ add-apt-repository "deb https://apt.dockerproject.org/repo/ ubuntu-$(lsb_release
 apt-get update
 apt-get -y install docker-engine
 docker run hello-world
+chmod +x *.sh -R
