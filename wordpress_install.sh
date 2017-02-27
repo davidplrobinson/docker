@@ -1,4 +1,4 @@
 #~/bin/bash
 
-mv docker ../
-../docker/go.sh
+mv wordpress ../
+../wordpress/go.sh
