@@ -1,5 +1,7 @@
 #/bin/bash
 
+# Tested and working on ubuntu. 
+
 apt-get update
 apt-get install -y --no-install-recommends linux-image-extra-$(uname -r) linux-image-extra-virtual
 apt-get install -y --no-install-recommends apt-transport-https ca-certificates curl software-properties-common
