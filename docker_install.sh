@@ -10,6 +10,6 @@ add-apt-repository "deb https://apt.dockerproject.org/repo/ ubuntu-$(lsb_release
 apt-get update
 apt-get -y install docker-engine
 apt-get -y install docker-compose
-curl -L https://github.com/docker/compose/releases/download/1.10.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
 chmod +x /usr/docker-compose
 docker run hello-world
