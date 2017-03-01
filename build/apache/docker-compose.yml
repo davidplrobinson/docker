@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+   apachetest:
+      build: .
+      image: david/apachetest
+      ports: 
+         - "0.0.0.0:80:80"
+      container_name: apachetest
