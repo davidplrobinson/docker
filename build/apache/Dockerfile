@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM ubuntu:latest
 MAINTAINER david.pl.robinson@googlemail.com
 
 RUN apt-get update
