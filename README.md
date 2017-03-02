@@ -1,2 +1,2 @@
 # docker
-Just a collection of scripts that install docker and various containers. 
+Just a collection of scripts that I use to test, play with and learn docker. Feel free to take a copy. 
