@@ -3,7 +3,7 @@ version: '2'
 services:
    apachetest:
       build: .
-      image: david/apachetest
+      image: w3serv/apache
       ports: 
          - "0.0.0.0:80:80"
-      container_name: apachetest
+      container_name: apache
