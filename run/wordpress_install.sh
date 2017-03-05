@@ -1,6 +1,7 @@
 #~/bin/bash
 
 ~/docker/docker_install.sh
-mv wordpress ~/
+mkdir ~/wordpress
+cp -avr wordpress/* ~/wordpress
 cd ~/wordpress
 ./go.sh

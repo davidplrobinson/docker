@@ -1,6 +1,7 @@
 #~/bin/bash
 
 ~/docker/docker_install.sh
-mv apache ~/
+mkdir ~/apache
+cp -avr apache/* ~/apache
 cd ~/apache
 ./go.sh

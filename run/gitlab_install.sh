@@ -1,6 +1,7 @@
 #~/bin/bash
 
 ~/docker/docker_install.sh
-mv gitlab ~/
+mkdir ~/gitlab
+cp -avr gitlab/* ~/gitlab
 cd ~/gitlab
 ./go.sh
