@@ -15,3 +15,4 @@ COPY ./files/var/www/html/index.html /var/www/html/
 COPY ./files/var/www/html/phptest.php /var/www/html/
 
 EXPOSE 80
+EXPOSE 3306
