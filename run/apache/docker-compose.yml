@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-   apachetest:
+   apache:
       image: w3serv/apache
       ports: 
          - 80:80
