@@ -1,8 +1,0 @@
-version: '2'
-
-services:
-   apachetest:
-      image: w3serv/apache
-      ports: 
-         - 80:80
-      container_name: apache
