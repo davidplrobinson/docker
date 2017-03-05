@@ -4,6 +4,9 @@ MAINTAINER david.pl.robinson@googlemail.com
 RUN apt-get update
 RUN apt-get install -y apache2
 RUN apt-get install -y php libapache2-mod-php php-mcrypt php-mysql
+RUN echo "mysql-server mysql-server/root_password password changeme" | sudo debconf-set-selections
+RUN echo "mysql-server mysql-server/root_password_again password changeme" | sudo debconf-set-selections
+RUN apt-get install mysql-server
 
 CMD ["-D", "FOREGROUND"]
 ENTRYPOINT ["apachectl"]
