@@ -12,7 +12,7 @@ services:
    restart: always
    volumes:
      - /var/run/docker.sock:/var/run/docker.sock
-registry:
+ registry:
    build: ./registry
    restart: always
    expose:
@@ -22,7 +22,7 @@ registry:
      VIRTUAL_HOST: '*:5000, https://*:5000'
      FORCE_SSL: 'true'
      REGISTRY_STORAGE_DELETE_ENABLED: 'true'
-registry-ui:
+ registry-ui:
    image: konradkleine/docker-registry-frontend:v2
    restart: always
    environment:
