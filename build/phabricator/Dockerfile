@@ -31,7 +31,7 @@ RUN cd /var/www `
 CMD ["-D", "FOREGROUND"]
 ENTRYPOINT ["apachectl"]
 
-COPY ./files/etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/
+#COPY ./files/etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/
 #COPY ./files/var/www/html/phptest.php /var/www/html/
 
 EXPOSE 80
