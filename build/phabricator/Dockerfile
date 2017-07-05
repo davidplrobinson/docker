@@ -3,6 +3,8 @@
 FROM w3serv/ubuntu:lamp
 MAINTAINER david.pl.robinson@googlemail.com
 
+RUN apt-get install -y php-curl
+
 RUN cd /var/www `
  && git clone https://github.com/phacility/libphutil.git `
  && git clone https://github.com/phacility/arcanist.git `
