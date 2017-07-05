@@ -1,6 +1,6 @@
 #escape=`
 
-FROM ubuntu:latest
+FROM ubuntu:artful
 MAINTAINER david.pl.robinson@googlemail.com
 
 RUN apt-get update
