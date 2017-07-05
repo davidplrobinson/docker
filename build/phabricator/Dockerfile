@@ -4,19 +4,13 @@ FROM ubuntu:latest
 MAINTAINER david.pl.robinson@googlemail.com
 
 RUN apt-get update
-RUN apt-get install -y locales
-RUN apt-get install -y language-pack-en-base
-RUN apt-get install -y software-properties-common
+RUN apt-get install -y locales language-pack-en-base software-properties-common
 RUN locale-gen en_US.UTF-8
 RUN export LANG=en_US.UTF-8
 RUN LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 RUN apt-get update -y 
 
-RUN apt-get install -y git-all
-RUN apt-get install -y apache2
-RUN apt-get install -y libpcre3 libpcre3-dev
-RUN apt-get install -y php-pear
-RUN apt-get install -y libapache2-mod-php
+RUN apt-get install -y git-all apache2 libpcre3 libpcre3-dev php-pear libapache2-mod-php
 RUN apt-get install -y php7.1 libapache2-mod-php7.1 php7.1-cli php7.1-common php7.1-mbstring php7.1-gd php7.1-intl php7.1-xml php7.1-mysql php7.1-mcrypt php7.1-zip php7.1-dev
 RUN pecl install apc
 RUN a2enmod rewrite
