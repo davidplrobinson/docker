@@ -3,7 +3,7 @@
 FROM ubuntu:artful
 MAINTAINER david.pl.robinson@googlemail.com
 
-RUN apt-get update
+#RUN apt-get update
 RUN apt-get install -y locales language-pack-en-base software-properties-common
 RUN locale-gen en_US.UTF-8
 RUN export LANG=en_US.UTF-8
