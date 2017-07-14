@@ -1,9 +1,11 @@
 version: '2'
 
 services:
-   apachetest:
-      build: .
-      image: w3serv/apache
+   apache:
+      image: w3serv/ubuntu:apache
+      restart: always
       ports: 
          - "0.0.0.0:80:80"
       container_name: apache
+      volumes:
+         - ~/www/webroot:/var/www/html
